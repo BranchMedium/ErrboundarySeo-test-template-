@@ -40,9 +40,9 @@ nav button {
     outline: none;
     border-style: inset;
     height: 30px;
-    width: 100px;
+    width: 90px;
     line-height: 15px;
-    margin: 9px 100px 0 100px;
+    margin: 9px 10px 0 10px;
     cursor: pointer;
     border-width: 5px;
 }
@@ -115,6 +115,7 @@ article.first-art div {
 }
 article.first-art div h3, article#last-art div h3 {
     text-align: center;
+    padding: 0;
 }
 /* the last text box of the main content*/
 article#last-art {
@@ -158,6 +159,55 @@ footer.foot address.contact div h4 {
     font-size: 18px;
     filter: contrast(400%);
 }
+@media (280px <= width <= 540) {
+    article.first-art div p, article#last-art div p {
+        height: 300px
+    }
+}
+
+/*this removes the last div with id remove */
+@media (280px <= width <= 540) {
+    div#remove, div#remove2 {
+        display: none;
+    }
+}
+/*adjust the backgorund images*/
+@media (280px <= width <= 540) {
+    section#first-sec {
+        background-image: url("botomrigh.png"), url("toplef.png"), 
+        url("circle.png");
+        background-repeat: no-repeat;
+        background-position: bottom right, top left, center;
+    }
+}
+
+/* Responsive nav buttons*/
+@media (max-width: 912px) {
+    header nav menu {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+
+/* effect to remove background image because of buttons hiding under the coach image*/
+@media (max-width: 600px) {
+    section#pic {
+        background-image: none;
+    }
+}
+@media (max-width: 600px) {
+    section#pic div#overlay {
+        display: none;
+        visibility: hidden;
+        z-index: -1;
+    }
+}
+@media (max-width: 600px) {
+    header#added {
+        display: none;
+        z-index: -2;
+    }
+}
 /* this generate effect for small mobile/android phones*/
 @media (max-width: 600px) {
     article.first-art {
@@ -167,14 +217,7 @@ footer.foot address.contact div h4 {
         margin-top: 0;
     }
 }
-@media (max-width: 600px) {
-    section#first-sec {
-        background-image: url("botomrigh.png"), url("toplef.png"), 
-        url("circle.png"), url("circle.png"), url("circle.png");
-        background-repeat: no-repeat;
-        background-position: bottom right, top left, center, 900px 400px, 55px 1200px;
-    }
-}
+
 @media (max-width: 600px) {
     section#serbac article#last {
         display: flex;
@@ -302,25 +345,6 @@ article#heal-envi div h2 {
         flex-flow: column nowrap;
         justify-content: space-evenly;
         height: 700px;
-    }
-}
-/* effect to remove background image because of buttons hiding under the coach image*/
-@media (max-width: 600px) {
-    section#pic {
-        background-image: none;
-    }
-}
-@media (max-width: 600px) {
-    section#pic div#overlay {
-        display: none;
-        visibility: hidden;
-        z-index: -1;
-    }
-}
-@media (max-width: 600px) {
-    header#added {
-        display: none;
-        z-index: -2;
     }
 }
 /* flex box container effect for the form section*/

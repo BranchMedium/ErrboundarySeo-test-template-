@@ -30,3 +30,11 @@ class ErTestTemplate extends Component {
     return this.props.children
   }
 }
+// USAGE
+/*
+<ErTestTemplate>
+  <ChildComponent/>
+</ErTestTemplate>
+*/
+//if an error occurs here, the parent file, it displays a the custom error set by the programmer
+// it is advisable to import <ErTestTemplate> as a module file in a parent/target component
