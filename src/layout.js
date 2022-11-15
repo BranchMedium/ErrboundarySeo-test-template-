@@ -5,7 +5,7 @@ import myStyleLayout from "./webstylelayout.module.css";
 const Layout = () => {
     return(
         <>
-            <header>
+            <header id="topHeader">
             {/**<!-- This usually contains logo, fundamental info, introductory content and some nav links if required --> */}
                 <h1>The <span>5</span> CO - HEPA</h1>
             </header>

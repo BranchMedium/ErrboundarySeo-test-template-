@@ -9,6 +9,7 @@ const Home = () => {
     return(
         <>
         <Layout/>
+        {/* <div> */}
             <header id={myStyleHome.added}>
             {/**<!--  This usually contains logo, fundamental info, introductory content and some nav links if required --> */}
                 <section id={myStyleHome.pic}>
@@ -21,6 +22,7 @@ const Home = () => {
                     </div>
                 </section>
             </header>
+        {/* </div> */}
             <section id={myStyleHome.firstSec}>
             {/**<!-- This usually defines section of codes of each of a content - for organizing and styling our document  --> */}
                 <main>

@@ -1,6 +1,7 @@
-section#topstyle menu, header#added, section#serbac main, 
-article#healEnvi figure, article#healEnvi figcaption {
+ header#added {
     margin-top: 0;
+    height: 700px;
+    
 } 
 @media (max-width: 600px) {
     header#added {
@@ -40,6 +41,7 @@ section#pic {
     background-clip: border-box;
     display: flex;
     flex-wrap: nowrap;
+    
 }
 /* This area makes the transparent effect fo the top picture*/
 section#pic div#overlay {
@@ -47,6 +49,7 @@ section#pic div#overlay {
     background-size: cover;
     height: 700px;
     display: inline-block
+    
 }
 /* effect to remove background image because of buttons hiding under the coach image*/
 @media (max-width: 600px) {
