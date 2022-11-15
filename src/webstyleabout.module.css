@@ -1,0 +1,29 @@
+section#aboutBac {
+    background-image: url("circle.png"), url("toplef.png");
+    background-repeat: no-repeat;
+    background-position: center, 0 0;
+}
+/* this effect the paragraph text on about page*/
+section#aboutBac div {
+    flex: 0 1 auto;
+    padding: 50px;
+    border-radius: 3px;
+    margin: 200px;
+    margin-bottom: 300px;
+    margin-top: 100px;
+    background-color: rgba(80, 80, 80, 0.9);
+}
+/* about page flex box container*/ 
+section#aboutBac article {
+    display: flex;
+    flex-direction: row;
+}
+section#aboutBac div h2 {
+    font-family: monospace;
+    color: white;
+}
+section#aboutBac div p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: whitesmoke;
+}

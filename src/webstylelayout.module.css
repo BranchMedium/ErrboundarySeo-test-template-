@@ -1,0 +1,58 @@
+header {
+    background-color: rgba(214, 218, 214, 0.911);
+    height: 90px;
+    padding: 1px;
+    border-bottom: 4px solid greenyellow;
+    filter: contrast(120%);
+}
+header h1 {
+    text-align: center;
+    color: black;
+}
+header h1 span {
+    font-size: larger;
+    color: green;
+}
+/*the yellow green background color for the nav section*/
+section#topstyle {
+    background-color: greenyellow;
+    filter: contrast(150%)
+}
+section#topstyle menu, header#added, section#serbac main, 
+article#healEnvi figure, article#healEnvi figcaption {
+    margin-top: 0;
+} 
+button.wego {
+    border-color: #808080;
+}
+nav button {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    text-align: center;
+    height: 50px;
+    background-color: #808080;
+    border-radius: 50px 50px 0 0;
+    filter: contrast(150%);
+}
+/*nav button*/
+nav button {
+    outline: none;
+    border-style: inset;
+    height: 30px;
+    width: 100px;
+    line-height: 15px;
+    margin: 9px 100px 0 100px;
+    cursor: pointer;
+    border-width: 5px;
+}
+nav button:hover {
+    background-color: white;
+}
+nav button Link:active {
+    color: green;
+}
+nav button:active {
+    border-color: white;
+}

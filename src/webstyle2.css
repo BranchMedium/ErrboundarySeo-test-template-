@@ -7,7 +7,7 @@ header {
     filter: contrast(120%);
 }
 section#topstyle menu, header#added, section#serbac main, 
-article#heal-envi figure, article#heal-envi figcaption {
+article#healEnvi figure, article#healEnvi figcaption {
     margin-top: 0;
 } 
 header h1 {
@@ -19,7 +19,7 @@ header h1 span {
     color: green;
 }
 /* nav section for the 3 page website*/
-nav button a {
+nav button Link {
     text-decoration: none;
     color: black;
 }
@@ -52,7 +52,7 @@ button.wego {
 nav button:hover {
     background-color: white;
 }
-nav button a:active {
+nav button Link:active {
     color: green;
 }
 nav button:active {
@@ -99,12 +99,12 @@ section#pic div#overlay {
     display: inline-block
 }
 /* the text box of the main content*/
-article.first-art {
+article.firstArt {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-article.first-art div {
+article.firstArt div {
     flex: 1 1 80px;
     text-align: center;
     margin: 100px;
@@ -113,16 +113,16 @@ article.first-art div {
     border-radius: 70px;
     background-color: rgba(80, 80, 80, 0.7);
 }
-article.first-art div h3, article#last-art div h3 {
+article.firstArt div h3, article#lastArt div h3 {
     text-align: center;
 }
 /* the last text box of the main content*/
-article#last-art {
+article#lastArt {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-article#last-art div {
+article#lastArt div {
     text-align: center;
     margin: 100px;
     padding: 50px;
@@ -160,7 +160,7 @@ footer.foot address.contact div h4 {
 }
 /* this generate effect for small mobile/android phones*/
 @media (max-width: 600px) {
-    article.first-art {
+    article.firstArt {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -168,7 +168,7 @@ footer.foot address.contact div h4 {
     }
 }
 @media (max-width: 600px) {
-    section#first-sec {
+    section#firstSec {
         background-image: url("botomrigh.png"), url("toplef.png"), 
         url("circle.png"), url("circle.png"), url("circle.png");
         background-repeat: no-repeat;
@@ -188,19 +188,19 @@ footer.foot address.contact div h4 {
     }
 }
 /* this are backgroung  created graphic images*/
-section#first-sec {
+section#firstSec {
     background-image: url("botomrigh.png"), url("toplef.png"), 
     url("circle.png"), url("circle.png"), url("circle.png");
     background-repeat: no-repeat;
     background-position: bottom right, top left, center, 900px 200px, 55px 1700px;
 }
-section#about-bac {
+section#aboutBac {
     background-image: url("circle.png"), url("toplef.png");
     background-repeat: no-repeat;
     background-position: center, 0 0;
 }
 /* this effect the paragraph text on about page*/
-section#about-bac div {
+section#aboutBac div {
     flex: 0 1 auto;
     padding: 50px;
     border-radius: 3px;
@@ -210,15 +210,15 @@ section#about-bac div {
     background-color: rgba(80, 80, 80, 0.9);
 }
 /* about page flex box container*/ 
-section#about-bac article {
+section#aboutBac article {
     display: flex;
     flex-direction: row;
 }
-section#about-bac div h2 {
+section#aboutBac div h2 {
     font-family: monospace;
     color: white;
 }
-section#about-bac div p {
+section#aboutBac div p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
     color: whitesmoke;
@@ -256,14 +256,14 @@ section#serbac article#last div p {
     text-align: center;
 }
 /* flex box effect of two beautiful box on the services page*/
-article#heal-envi {
+article#healEnvi {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     height: 600px;
     margin-bottom: 50px;
 }
-article#heal-envi div {
+article#healEnvi div {
     flex: 0 1 main-size;
     height: 300px;
     border-radius: 20px;
@@ -273,12 +273,12 @@ article#heal-envi div {
     background-color: rgba(80, 80, 80, 0.9);
     filter: contrast(120%);
 }
-article#heal-envi div figure img {
+article#healEnvi div figure img {
     float: left;
     margin-top: 0px;
     margin-right: 20px;
 }
-article#heal-envi div figure figcaption {
+article#healEnvi div figure figcaption {
     display: inline;
     color: whitesmoke;
     font-weight: bolder;
@@ -286,7 +286,7 @@ article#heal-envi div figure figcaption {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
 }
-article#heal-envi div h2 {
+article#healEnvi div h2 {
     color: #696969;
     filter: contrast(400%);
     font-weight: bolder;
@@ -297,7 +297,7 @@ article#heal-envi div h2 {
 }
 /* effect for small android phones for of two beautiful box on the services page*/
 @media (max-width: 600px) {
-    article#heal-envi {
+    article#healEnvi {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
@@ -324,7 +324,7 @@ article#heal-envi div h2 {
     }
 }
 /* flex box container effect for the form section*/
-section#at-last {
+section#atLast {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -333,21 +333,21 @@ section#at-last {
     height: 60px;
     margin-bottom: 20px;
 }
-section#at-last div {
+section#atLast div {
     display: inline-block;
     padding-top: 20px;
     padding-left: 15px;
 }
-section#at-last div h5 {
+section#atLast div h5 {
     display: inline;
     font-size: 16px;
     font-family: sans-serif;
 }
-section#at-last div form {
+section#atLast div form {
     display: inline;
     padding-right: 15px;
 }
-section#at-last div form input#sub {
+section#atLast div form input#sub {
     border: none;
     outline: none;
     cursor: pointer;
@@ -355,18 +355,18 @@ section#at-last div form input#sub {
     background-color: yellowgreen;
     filter: contrast(120%);
 }
-section#at-last div form input#em {
+section#atLast div form input#em {
     width: 199px;
     height: 22px;
     border: none;
     outline: none;
 }
-section#at-last div form input#em::placeholder {
+section#atLast div form input#em::placeholder {
     color: black;
     padding-left: 5px;
     text-align: center;
 }
-section#at-last div form input#sub:hover {
+section#atLast div form input#sub:hover {
     filter: contrast(150%);
 }
 

@@ -1,0 +1,30 @@
+/* footer effect*/
+footer.foot {
+    background-color: #808080;
+    filter: contrast(150%);
+    height: 100px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 0;
+    display: block;
+}
+footer.foot address.contact {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 0;
+    height: 80px;
+    justify-content: center;
+}
+footer.foot address.contact div {
+    margin: 30px 30px 0 30px;
+}
+footer.foot address.contact div h4 {
+    color: #696969;
+    font-size: 18px;
+    filter: contrast(400%);
+}
+@media (max-Width: 600px) {
+    footer.foot address.contact details {
+        display: none;
+    }
+}

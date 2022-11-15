@@ -1,0 +1,122 @@
+section#topstyle menu, header#added, section#serbac main, 
+article#healEnvi figure, article#healEnvi figcaption {
+    margin-top: 0;
+} 
+@media (max-width: 600px) {
+    header#added {
+        display: none;
+        z-index: -2;
+    }
+}
+/* the paragraph text on top picture*/
+section#pic div#overlay p {
+    text-align: center;
+    margin-left: 230px;
+    margin-right: 200px;
+    color: #696969;
+    filter: contrast(400%);
+}
+/* this contains the text effect on the top picture*/
+section#pic div#overlay p:first-child {
+    font-weight: 100px;
+    font-size: 60px;
+    margin-top: 200px;
+}
+section#pic div#overlay p:nth-child(2) {
+    font-size: 30px;
+    margin-top: 100px;
+}
+section#pic div#overlay p:nth-child(3) {
+    float: left;
+    font-size: 19PX;
+    margin-left: 5px;
+    
+}
+/* top picture*/
+section#pic {
+    background-image: url("coach.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* This area makes the transparent effect fo the top picture*/
+section#pic div#overlay {
+    background-color: rgba(255, 255, 255, 0.4);
+    background-size: cover;
+    height: 700px;
+    display: inline-block
+}
+/* effect to remove background image because of buttons hiding under the coach image*/
+@media (max-width: 600px) {
+    section#pic {
+        background-image: none;
+    }
+}
+@media (max-width: 600px) {
+    section#pic div#overlay {
+        display: none;
+        visibility: hidden;
+        z-index: -1;
+    }
+}
+@media (max-width: 600px) {
+    section#firstSec {
+        background-image: url("botomrigh.png"), url("toplef.png"), 
+        url("circle.png"), url("circle.png"), url("circle.png");
+        background-repeat: no-repeat;
+        background-position: bottom right, top left, center, 900px 400px, 55px 1200px;
+    }
+}
+/* this are backgroung  created graphic images*/
+section#firstSec {
+    background-image: url("botomrigh.png"), url("toplef.png"), 
+    url("circle.png"), url("circle.png"), url("circle.png");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left, center, 900px 200px, 55px 1700px;
+}
+/* the text box of the main content*/
+article.firstArt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+article.firstArt div {
+    flex: 1 1 80px;
+    text-align: center;
+    margin: 100px;
+    padding: 50px;
+    font-size: 22px;
+    border-radius: 70px;
+    background-color: rgba(80, 80, 80, 0.7);
+}
+article.firstArt div h3, article#lastArt div h3 {
+    text-align: center;
+}
+/* this generate effect for small mobile/android phones*/
+@media (max-width: 600px) {
+    article.firstArt {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+}
+/* the last text box of the main content*/
+article#lastArt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+article#lastArt div {
+    text-align: center;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 70px;
+    font-size: 22px;
+    background-color: rgba(80, 80, 80, 0.7);
+    flex-basis: main-size;
+    width: 330px;
+    height: 400px;
+}

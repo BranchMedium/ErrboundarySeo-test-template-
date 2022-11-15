@@ -1,0 +1,125 @@
+@media (max-width: 600px) {
+    section#serbac article#last {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+/* backgroung for about page*/
+section#serbac {
+    background-image: url("circle.png"), url("circle.png");
+    background-position: 1000px 200px, 0 800px;
+    background-repeat: no-repeat;
+}
+/* services  first paragraph text*/
+section#serbac article#last div {
+    text-align: center;
+    margin-top: 80px;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 17px;
+    flex: 2 1 main-size;
+    width: 1000px;
+    filter: contrast(120%);
+    height: 150px;
+    background-color: rgba(80, 80, 80, 0.9);
+}
+section#serbac article#last {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section#serbac article#last div p {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #696969;
+    filter: contrast(400%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    section#serbac article#last {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+/* services  first paragraph text*/
+section#serbac article#last div {
+    text-align: center;
+    margin-top: 80px;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 17px;
+    flex: 2 1 main-size;
+    width: 1000px;
+    filter: contrast(120%);
+    height: 150px;
+    background-color: rgba(80, 80, 80, 0.9);
+}
+section#serbac article#last {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section#serbac article#last div p {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #696969;
+    filter: contrast(400%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+section#topstyle menu, header#added, section#serbac main, 
+article#healEnvi figure, article#healEnvi figcaption {
+    margin-top: 0;
+} 
+/* flex box effect of two beautiful box on the services page*/
+article#healEnvi {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: 600px;
+    margin-bottom: 50px;
+}
+article#healEnvi div {
+    flex: 0 1 main-size;
+    height: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 80px;
+    width: 300px;
+    background-color: rgba(80, 80, 80, 0.9);
+    filter: contrast(120%);
+}
+article#healEnvi div figure img {
+    float: left;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+article#healEnvi div figure figcaption {
+    display: inline;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+}
+article#healEnvi div h2 {
+    color: #696969;
+    filter: contrast(400%);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+/* effect for small android phones for of two beautiful box on the services page*/
+@media (max-width: 600px) {
+    article#healEnvi {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+}
