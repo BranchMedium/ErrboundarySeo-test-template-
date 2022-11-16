@@ -2,6 +2,7 @@ header#topHeader {
     background-color: rgba(214, 218, 214, 0.911);
     height: 90px;
     padding: 1px;
+    width: 100%;
     border-bottom: 4px solid greenyellow;
     filter: contrast(120%);
 }
@@ -17,6 +18,7 @@ header h1 span {
 section#topstyle {
     background-color: greenyellow;
     filter: contrast(150%);
+    width: 100%;
 }
 section#topstyle menu, header#added, section#serbac main, 
 article#healEnvi figure, article#healEnvi figcaption {
@@ -35,13 +37,14 @@ nav {
     background-color: #808080;
     border-radius: 50px 50px 0 0;
     filter: contrast(150%);
+    width: 100%;
 }
 /*nav button*/
 nav button {
     outline: none;
     border-style: inset;
     height: 30px;
-    width: 100px;
+    width: 90px;
     line-height: 15px;
     margin: 9px 100px 0 100px;
     cursor: pointer;
@@ -55,4 +58,21 @@ nav button Link:active {
 }
 nav button:active {
     border-color: white;
+}
+@media (540px <= width <= 820px) {
+    nav button {
+        margin-right: 50px;
+        margin-left: 50px;
+        width: 55px;
+        font-size: 10px;
+    }
+}
+@media (280px <= width <= 414px) {
+    nav button {
+        font-size: 5px;
+        width: 35px;
+        height: 24px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }

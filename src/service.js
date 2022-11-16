@@ -55,7 +55,7 @@ const Service = () => {
                                         
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quasi, nihil facere repellendus
                                             beatae reprehenderit rerum voluptate e
-                                            aque mollitia. Eligendi similique temporibus possimus nisi ut modi quisquam omnis consectetur vero.
+                                            aque mollitia. Eligendi similique temporibus possimus nisi ut modi quisquam omnis consectetur vero?
                                     
                                     </figcaption>
                                 </figure>

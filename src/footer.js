@@ -11,7 +11,7 @@ const Footer = () => {
                 {/**<!-- This usually defines section of codes of each of a content - for organizing and styling our document  --> */}
                     <address className={myStyleFooter.contact}>
                         <div>
-                            <img src="./insta.png" alt="instagram" height="50px" width="50px"/>
+                            <img src="insta.png" alt="instagram" height="50px" width="50px"/>
                         </div>
                         <div>
                             <img src="twi.png" alt="twitter" width="50px" height="50px"/>

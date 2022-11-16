@@ -23,8 +23,20 @@ footer.foot address.contact div h4 {
     font-size: 18px;
     filter: contrast(400%);
 }
-@media (max-Width: 600px) {
+@media (max-width: 600px) {
     footer.foot address.contact details {
         display: none;
+    }
+}
+@media (max-width: 280px) {
+    footer.foot address.contact div img {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (820px <= width <= 912px) {
+    footer.foot, footer.foot address.contact {
+        margin-bottom: 0;
+        margin-top: 350px;
     }
 }

@@ -15,7 +15,6 @@ const Home = () => {
                 <section id={myStyleHome.pic}>
                 {/**<!-- This usually defines section of codes of each of a content - for organizing and styling our document  --> */}
                     <div id={myStyleHome.overlay}>
-                        
                         <p>Welcome to the co-hepa site</p>
                         <p>We help others to become a better version of themselves by coaching, quick understanding and instruction</p>
                         <p>We Can Do It</p>
