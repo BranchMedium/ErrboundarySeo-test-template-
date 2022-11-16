@@ -7,6 +7,7 @@ footer.foot {
     border: none;
     margin-bottom: 0;
     display: block;
+    width: 100%;
 }
 footer.foot address.contact {
     display: flex;
@@ -38,5 +39,11 @@ footer.foot address.contact div h4 {
     footer.foot, footer.foot address.contact {
         margin-bottom: 0;
         margin-top: 350px;
+    }
+}
+@media (min-width: 76.3mm) {
+    footer.foot, footer.foot address.contact {
+        margin-top: 150px;
+        margin-bottom: 0;
     }
 }

@@ -72,6 +72,11 @@ section#pic div#overlay {
         background-position: bottom right, top left, center, 900px 400px, 55px 1200px;
     }
 }
+@media (min-width: 76.3mm) {
+    article.firstArt div h3, article.firstArt div p, article#lastArt h3, article#lastArt p {
+        font-size: 14px;
+    }
+}
 /* this are backgroung  created graphic images*/
 section#firstSec {
     background-image: url("botomrigh.png"), url("toplef.png"), 
