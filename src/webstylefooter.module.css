@@ -43,7 +43,7 @@ footer.foot address.contact div h4 {
 }
 @media (min-width: 76.3mm) {
     footer.foot, footer.foot address.contact {
-        margin-top: 160px;
+        margin-top: 175px;
         margin-bottom: 0;
     }
 }
