@@ -1,6 +1,6 @@
 /* footer effect*/
 footer.foot {
-    background-color: #808080;
+    background-color: aqua;
     filter: contrast(150%);
     height: 100px;
     border-radius: 3px;

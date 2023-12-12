@@ -1,331 +1,304 @@
-@media (max-width: 600px) {
-    #added {
-        display: none;
-        z-index: -2;
-    }
+.flexmininote {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* border: red solid 1px; */
+   
 }
-/* the paragraph text on top picture*/
-/* #pic div#overlay p {
-    text-align: center;
-    margin-left: 230px;
-    margin-right: 200px;
-    color: #696969;
-    filter: contrast(400%);
-} */
-/* this contains the text effect on the top picture*/
-/* #pic div#overlay p:first-child {
-    font-weight: 100px;
-    font-size: 60px;
-    margin-top: 200px;
-}
-#pic div#overlay p:nth-child(2) {
-    font-size: 30px;
-    margin-top: 100px;
-}
-#pic div#overlay p:nth-child(3) {
-    float: left;
-    font-size: 19PX;
-    margin-left: 5px;
-    
-} */
-/* top picture*/
-#pic {
-    background-image: url("coach.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: border-box;
-    
-}
-/* This area makes the transparent effect fo the top picture*/
-/* #pic div#overlay {
-    background-color: rgba(255, 255, 255, 0.4);
-    background-size: cover;
-    height: 700px;
-    display: inline-block
-    
-} */
-/* effect to remove background image because of buttons hiding under the coach image*/
-/* @media (max-width: 600px) {
-    #pic {
-        background-image: none;
-    }
-} */
-/* @media (max-width: 600px) {
-    #pic div#overlay {
-        display: none;
-        visibility: hidden;
-        z-index: -1;
-    }
-} */
 
-
-
-/*********************************************Modification done below during the christmas holiday**Holiday challenge***********************************************************************************/
-
-
-#added {
+#gridmininote {
     display: grid;
+    justify-content: center;
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* border: indianred 1px dashed; */
+}
+#note {
+    background-color: pink;
+}
+#image {
+    background-color: green;
+}
 
-    /* height: 700px; */
-    /* background-color: black; */
-}
-/* #pic {
-    background-color: aqua;
+
+
+/****************responsive for max width 218px(wearables)*************************************/
+/* @media only screen and (max-device-width: 218px) and (max-device-height: 281px) {
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5px;
+    }
+
 } */
-/* responsive for max width 218px(wearables) */
-@media only screen and (max-device-width: 218px) and (max-device-height: 281px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 200px;
-    }
-    #pic {
-        grid-column: 1/8;
-    }
-}
 /**************************************/
 @media only screen and (max-device-width: 218px) and (max-device-height: 281px) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 100px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /****************************************/
 @media only screen and (max-device-width: 281px) and (max-device-height: 218px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 120px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /******************************************************************************************************************/
 /* responsive for max width 320px <= device width */
 @media only screen and (max-device-width: 320px) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 200px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /*********************/
 @media only screen and (max-device-width: 320px) and (max-device-height: 320px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 200px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /***********************************************************************************************************************************************/
 /* responsive for min width 320px/max width 480px(Iphone 4 and 4S) pixel 2*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 240px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 300px;
+    #note {
+        width: 200px;
+        height: 190px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 270px;
+        height: 190px;
     }
 }
 /**********************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 240px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /*************************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 300px;
+    #note {
+        width: 200px;
+        height: 190px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 270px;
+        height: 190px;
     }
 }
 /***************************************************************************************************************************************************************************************************/
-/* responsive for min width 320px/max width 568px pixel 2*/
+/* responsive for min width 320px/max width 568px  5C pixel 2*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 240px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 320px) and (max-device-height: 568px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 300px;
+    #note {
+        width: 240px;
+        height: 190px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 290px;
+        height: 190px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 240px;
+    #note {
+        width: 150px;
+        height: 150px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 160px;
+        height: 150px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 320px) and (max-device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 300px;
+    #note {
+        width: 240px;
+        height: 190px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 290px;
+        height: 190px;
     }
 }
 /*************************************************************************************************************************************************************************/
-/* responsive for min width 375px/max width 667px pixel 2 */
+/* responsive for min width 375px/max width 667px 6S pixel 2 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 300px;
+    #note {
+        width: 170px;
+        height: 170px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 200px;
+        height: 170px;
     }
 }
 /*************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-height: 375px) and (max-device-height: 667px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 325px;
+    #note {
+        width: 280px;
+        height: 210px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 210px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 300px;
+    #note {
+        width: 170px;
+        height: 170px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 200px;
+        height: 170px;
     }
 }
 /****************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-height: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 325px;
+    #note {
+        width: 280px;
+        height: 210px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 210px;
     }
 }
 /******************************************************************************************************************************************/
 /* responsive for min width 414px/max width 736px(Iphone 6+, 7+, 8+) pixel 3 */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 315px;
+    #note {
+        width: 190px;
+        height: 170px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 220px;
+        height: 170px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (min-device-height: 414px) and (max-device-height: 736px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 325px;
+    #note {
+        width: 320px;
+        height: 230px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 380px;
+        height: 230px;
     }
 }
 /*********************************/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 315px;
+    #note {
+        width: 190px;
+        height: 170px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 220px;
+        height: 170px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (min-device-height: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 325px;
+    #note {
+        width: 320px;
+        height: 230px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 380px;
+        height: 230px;
     }
 }
 /*********************************************************************************************************************************************/
 /* responsive for min width 375px/max width 812px(iphone X) pixel 3 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 170px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 200px;
+        height: 160px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-device-height: 375px) and (max-device-height: 812px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 360px;
+        height: 250px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 420px;
+        height: 250px;
     }
 }
 /*************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 170px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 200px;
+        height: 160px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-device-height: 375px) and (max-device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 360px;
+        height: 250px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 420px;
+        height: 250px;
     }
 }
 /***************************************************************************************************************************/
@@ -335,145 +308,178 @@ GALAXY PHONES  ||||||
 
 /* responsive for min width 360px/max width 640px(galaxy S3) pixel 2 */
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
-      }
-    #pic {
-         grid-column: 1/8;
+    #note {
+        width: 160px;
+        height: 160px;
+    }
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 280px;
+        height: 240px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 240px;
     }
 }
 /*********************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 160px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 280px;
+        height: 240px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 240px;
     }
 }
 /***********************************************************************************************************************************************/
 /* responsive for min width 360px/max width 640px(galaxy S4, S5, Note3)pixel: 3 =======  HTC PHONE = HTC One, Google pixel */
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    .latestPic > .blockText {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
     }
-    #pic {
-        grid-column: 1/8;
+    .bigpad li {
+        padding: 7px;
+        font-size: 17px;
     }
+    .latestPic > .horizontal {
+        width: 430px;
+        height: 270px;
+    }
+.latestGrid {
+    padding-bottom: 50px;
 }
+} */
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+    .latestPic > .blockText {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
     }
-    #pic {
-        grid-column: 1/8;
+    .latestPic > .horizontal {
+        width: 460px;
+        height: 290px;
     }
+    .bigpad li {
+        padding: 7px;
+        font-size: 17px;
+        text-align: center;
+    }
+.latestGrid {
+    padding-bottom: 50px;
 }
+} */
 /*******************************************/
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
-    #added {
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
-}
+} */
 /*++++++++++++++++++++++++++++++++++++++++++++++++++*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (orientation: landscape) {
-    #added {
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (orientation: landscape) {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
-}
+} */
 /******************************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 160px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 280px;
+        height: 240px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 240px;
     }
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 160px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 280px;
+        height: 240px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 240px;
     }
 }
 /*********************************************************************************************************************************************************************************************/
 /* responsive for min width 360px/max width 640px(galaxy S6) pixel 4 ======== GOOGLE PIXEL = Google Pixel XL */
 /* check the previous @media for the default min 360px/max 640px */
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 160px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /***************************************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 280px;
+        height: 240px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 340px;
+        height: 240px;
     }
 }
 /************************************************************************************************************************************************************************/
@@ -482,176 +488,184 @@ NEXUS PHONES  ||||||
 */
 /* responsive for min width 384px/max width 640px(Nexus 4 [alt])  pixel 2*/
 /* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
-      }
-    #pic {
+    }
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /***********************************/
 /* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /************************************/
 /* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (min-device-height: 384px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 }
 ********************************************************this was commented: similar view port to galaxy S3******************************************************************************************************************* */
 /* responsive for min width 384px/max width 592px(Nexus 4) pixel 2 */
 /* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
-      }
-    #pic {
+    }
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /***********************************/
 /* @media only screen and (min-device-width: 384px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /************************************/
 /* @media only screen and (min-device-width: 384px) and (max-device-width: 592px) and (min-device-height: 384px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 }
 ********************************************************this was commented: similar view port to galaxy S3******************************************************************************************************************* */
 /* responsive for min width 360px/max width 592px (Nexus 5) pixel 3*/
 /* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /************************************************/
 /* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
-    #added {
+    #articleContainer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: 390px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 1/8;
     }
 } */
 /**************************************************this is commented: similar to galaxy S4*********************************************************************************************************************/
 /* responsive for min width 412px/ max width 732px(Nexus 6, 6P) pixel 4 */
 @media only screen and (min-device-width: 412px) and (max-device-width: 732px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 185px;
+        height: 180px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 215px;
+        height: 180px;
     }
 }
 /*************************************************/
 @media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (min-device-height: 412px) and (max-device-height: 732px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 320px;
+        height: 260px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 380px;
+        height: 260px;
     }
 }
 /*******************************************/
 @media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 185px;
+        height: 180px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 215px;
+        height: 180px;
     }
 }
 /***************************************************/
 @media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (min-device-height: 412px) and (max-device-height: 732px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 320px;
+        height: 260px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 380px;
+        height: 260px;
     }
 }
 /*********************************************************************************************************************************************************/
 /* responsive for min width 360px/max width 592px (Nexus 6 and 6P [alt]) pixel 4*/
 @media only screen and (min-device-width: 360px) and (max-device-width: 592px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 160px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /************************************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 320px;
+    #note {
+        width: 260px;
+        height: 220px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 320px;
+        height: 220px;
     }
 }
 /*****************************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 390px;
+    #note {
+        width: 160px;
+        height: 160px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 190px;
+        height: 160px;
     }
 }
 /*************************************************/
 @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 320px;
+    #note {
+        width: 260px;
+        height: 220px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 320px;
+        height: 220px;
     }
 }
 /**********************************************************************************************************************************************************************************************************/
@@ -660,23 +674,25 @@ WINDOWS PHONES  ||||||
 */
 /* responsive for min width 480px/max width 800px(windows phone) */
 @media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (min-device-height: 480px) and (max-device-height: 800px) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 460px;
+    #note {
+        width: 220px;
+        height: 220px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 250px;
+        height: 220px;
     }
 }
 /**********************************/
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (min-device-height: 480px) and (max-device-height: 800px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 385px;
+    #note {
+        width: 360px;
+        height: 280px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 420px;
+        height: 280px;
     }
 }
 /*********************************************************************************************************************************************************************/
@@ -685,250 +701,274 @@ ipad tablet ||||||
 */
 /* responsive for min width 768px/max width 1024px(ipad 1, 2, Mini) pixel 1 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-   #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 350px;
+        height: 350px;
     }
-    #pic {
-        grid-column: 2/14;
-    } 
+    #image {
+        width: 410px;
+        height: 350px;
+    }
 }
 /*********************************/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 470px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 530px;
+        height: 390px;
     }
 }
 /*********************************/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 450px;
+    #note {
+        width: 350px;
+        height: 350px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 410px;
+        height: 350px;
     }
-}
+    }
 /*************************************/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 470px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 530px;
+        height: 390px;
     }
 }
 /***************************************************************************************************************************************************************************/
 /* responsive for min width 820px/max width 1180px(ipad air) pixel 1 */
 @media only screen and (min-device-width: 820px) and (max-device-width: 1180px) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 360px;
+        height: 350px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 430px;
+        height: 350px;
     }
 }
 /*********************************/
 @media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (min-device-height: 820px) and (max-device-height: 1180px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 500px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 620px;
+        height: 390px;
     }
 }
 /******************************/
 @media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 360px;
+        height: 350px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 430px;
+        height: 350px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (min-device-height: 820px) and (max-device-height: 1180px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 500px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 620px;
+        height: 390px;
     }
 }
 /***************************************************************************************************************************************************************/
 /* responsive for min width 768px/max width 1024px(ipad 3, 4, pro 9.7) pixel 2 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    #added {
-         grid-template-columns: repeat(14, 1fr);
-         grid-template-rows: 490px;
-     }
-     #pic {
-         grid-column: 2/14;
-     } 
- }
- /*********************************/
- @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 340px;
+        height: 330px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 410px;
+        height: 330px;
     }
 }
- /************************************/
- @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-     #added {
-         grid-template-columns: repeat(14, 1fr);
-         grid-template-rows: 450px;
-     }
-     #pic {
-         grid-column: 2/14;
-     }
- }
- /*************************************/
- @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-     #added {
-         grid-template-columns: repeat(14, 1fr);
-         grid-template-rows: 490px;
-     }
-     #pic {
-         grid-column: 2/14;
-     }
- }
- /***************************************************************************************************************************************************************************/
- /* responsive for min width 834px/max width 1112px(ipad pro 10.5) pixel 2  */
-@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    /*********************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+    #note {
+        width: 440px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 560px;
+        height: 390px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #note {
+        width: 340px;
+        height: 330px;
+    }
+    #image {
+        width: 410px;
+        height: 330px;
+    }
+}
+    /*************************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #note {
+        width: 440px;
+        height: 390px;
+    }
+    #image {
+        width: 560px;
+        height: 390px;
+    }
+}
+    /***************************************************************************************************************************************************************************/
+    /* responsive for min width 834px/max width 1112px(ipad pro 10.5) pixel 2  */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) {
+    #note {
+        width: 380px;
+        height: 330px;
+    }
+    #image {
+        width: 450px;
+        height: 330px;
     }
 }
 /*********************************/
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (min-device-height: 834px) and (max-device-height: 1112px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 480px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 600px;
+        height: 390px;
     }
 }
 /********************************/
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 380px;
+        height: 330px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 450px;
+        height: 330px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (min-device-height: 834px) and (max-device-height: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 480px;
+        height: 390px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 600px;
+        height: 390px;
     }
 }
 /***************************************************************************************************************************************************************/
 /* responsive for min width 1024px/max width 1366px(ipad pro 12.9) pixel 2 */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
-    #added {
-         grid-template-columns: repeat(14, 1fr);
-         grid-template-rows: 490px;
-     }
-     #pic {
-         grid-column: 2/14;
-     } 
- }
- /*********************************/
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 460px;
+        height: 410px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 530px;
+        height: 410px;
     }
 }
- /******************************/
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-     #added {
-         grid-template-columns: repeat(14, 1fr);
-         grid-template-rows: 450px;
-     }
-     #pic {
-         grid-column: 2/14;
-     }
- }
- /*************************************/
- @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-     #added {
-         grid-template-columns: repeat(14, 1fr);
-         grid-template-rows: 490px;
-     }
-     #pic {
-         grid-column: 2/14;
-     }
- }
- /***************************************************************************************************************************************************************************/
+    /*********************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (orientation: landscape) {
+    #note {
+        width: 560px;
+        height: 430px;
+    }
+    #image {
+        width: 680px;
+        height: 430px;
+    }
+}
+/******************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #note {
+        width: 460px;
+        height: 410px;
+    }
+    #image {
+        width: 530px;
+        height: 410px;
+    }
+}
+    /*************************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #note {
+        width: 560px;
+        height: 430px;
+    }
+    #image {
+        width: 680px;
+        height: 430px;
+    }
+}
+    /***************************************************************************************************************************************************************************/
 /*
 Galaxy tablet ||||||
 */
 /* responsive for min width 800px/max width 1280px(galaxy tab 2) */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 360px;
+        height: 360px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 430px;
+        height: 360px;
     }
 }
 /*******************************/
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 560px;
+        height: 430px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 680px;
+        height: 430px;
     }
 }
 /* responsive for min width 800px/max width 1280px(galaxy tab S) pixel 2*/
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 360px;
+        height: 360px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 430px;
+        height: 360px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 560px;
+        height: 430px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 680px;
+        height: 430px;
     }
 }
 /**********************************************************************************************************************************************************************************/
@@ -937,42 +977,46 @@ Nexus tablet ||||||
 */
 /* responsive for min width 600px/max width 960px(Nexus 7) pixel 1.331/1.332 */
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 460px;
+    #note {
+        width: 260px;
+        height: 260px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 330px;
+        height: 260px;
     }
 }
 /***********************************************/
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 465px;
+    #note {
+        width: 400px;
+        height: 350px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 520px;
+        height: 350px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 460px;
+    #note {
+        width: 260px;
+        height: 260px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 330px;
+        height: 260px;
     }
 }
 /*************************************************/
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: 465px;
+    #note {
+        width: 400px;
+        height: 350px;
     }
-    #pic {
-        grid-column: 1/8;
+    #image {
+        width: 520px;
+        height: 350px;
     }
 }
 /******************************************************************************************************************************************************************************************************************************/
@@ -982,73 +1026,80 @@ Laptop ||||||
 */
 /* responsive for min width 1200px/max width 1600px(non-retina) */
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 500px;
+    #note {
+        width: 520px;
+        height: 370px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 640px;
+        height: 370px;
     }
 }
 /***************************************/
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 500px;
+    #note {
+        width: 520px;
+        height: 370px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 640px;
+        height: 370px;
     }
 }
- /* retina */
+    /* retina */
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 500px;
+    #note {
+        width: 520px;
+        height: 370px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 640px;
+        height: 370px;
     }
 }
 /************************************************************************************************************************************************************************************************************************************************/
 /* responsive for min width 1536px/max width 2048px(Nexus 9) pixel 1.331/1.332 */
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 600px;
+    #note {
+        width: 680px;
+        height: 520px;
     }
-    #pic {
-        grid-column: 2/13;
+    #image {
+        width: 800px;
+        height: 520px;
     }
 }
 /***************************************/
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-height: 1536px) and (max-device-height: 2048px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 600px;
+    #note {
+        width: 880px;
+        height: 720px;
     }
-    #pic {
-        grid-column: 3/13;
+    #image {
+        width: 1000px;
+        height: 720px;
     }
 }
 /********************************/
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 600px;
+    #note {
+        width: 680px;
+        height: 520px;
     }
-    #pic {
-        grid-column: 2/13;
+    #image {
+        width: 800px;
+        height: 520px;
     }
 }
 /****************************************/
 @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-height: 1536px) and (max-device-height: 2048px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 600px;
+    #note {
+        width: 880px;
+        height: 720px;
     }
-    #pic {
-        grid-column: 3/13;
+    #image {
+        width: 1000px;
+        height: 720px;
     }
 }
 /***************************************************************************************************************************************************************************/
@@ -1057,97 +1108,105 @@ Biggest screen  ||||||
 */
 /* responsive for min width 2048px(biggest screen) */
 @media only screen and (min-device-width: 2048px) and (min-device-height: 2048px) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 600px;
+    #note {
+        width: 880px;
+        height: 720px;
     }
-    #pic {
-        grid-column: 3/13;
+    #image {
+        width: 1000px;
+        height: 720px;
     }
 }
 /******************************************************************************************************************************************************************************************/
 /*
 Kindle fire  ||||||
 */
-/* responsive for min width 800px/max width 1280px(Kindle fire hd 7) pixel 1.5 */
+/* responsive for min width 800px/max width 1280px(Kindle fire hd 7) 8.9 too pixel 1.5 */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 320px;
+        height: 370px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 440px;
+        height: 370px;
     }
 }
 /*************************************/
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 500px;
+        height: 500px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 660px;
+        height: 500px;
     }
 }
 /*********************************/
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 320px;
+        height: 370px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 440px;
+        height: 370px;
     }
 }
 /***********************************/
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 490px;
+    #note {
+        width: 500px;
+        height: 500px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 660px;
+        height: 500px;
     }
 }
 /*********************************************************************************************************************************************/
 /* responsive for min width 1200px/max width 1600px (kindle fire hd 8.9)Pixel 1.5*/
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-    #added {
+/* @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    #articleContainer {
         grid-template-columns: repeat(14, 1fr);
         grid-template-rows: 500px;
     }
-    #pic {
-        grid-column: 2/14;
+    #articleContainercontent {
+        grid-column: 1/15;
     }
-}
+} */
 /************************************/
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px) and (orientation: landscape) {
-    #added {
+/* @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px) and (orientation: landscape) {
+    #articleContainer {
         grid-template-columns: repeat(14, 1fr);
         grid-template-rows: 600px;
     }
-    #pic {
+    #articleContainercontent {
         grid-column: 3/13;
     }
-}
+} */
 /**********************************/
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 500px;
+    #note {
+        width: 320px;
+        height: 370px;
     }
-    #pic {
-        grid-column: 2/14;
+    #image {
+        width: 640px;
+        height: 370px;
     }
 }
 /************************************/
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px)  and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: landscape) {
-    #added {
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: 600px;
+    #note {
+        width: 500px;
+        height: 500px;
     }
-    #pic {
-        grid-column: 3/13;
+    #image {
+        width: 660px;
+        height: 500px;
     }
 }
-/*******************************************************************************************************************************************************************/
+
+/****************************************************************/

@@ -1,0 +1,2888 @@
+#flexpictab {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.picturepictab {
+    /* background-image: url("coach.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box; */
+    background-color: aqua;
+}
+#gridnotetab {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    /* border: indianred 1px dashed; */
+}
+#flexsubtitletab {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.flexnotetab {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: dashed blue 2px; */
+    /* align-content: flex-start; */
+    justify-content: center;
+}
+.flexnotetab > * {
+    align-items: flex-start;
+    /* border:  red dashed 2px; */
+}
+.picturepictab > * {
+    align-items: flex-start;
+}
+.describesubtitletabFlex > * {
+    align-items: flex-start;
+}
+.describesubtitletabFlex {
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: nowrap;
+}
+#flexdescribesubtitletab {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+#description {
+    background-color: red;
+}
+#title {
+    background-color: blue;
+}
+.subtitletab {
+    background-color: green;
+}
+
+
+
+/****************responsive for max width 218px(wearables)*************************************/
+/* @media only screen and (max-device-width: 218px) and (max-device-height: 281px) {
+    p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 5px;
+    }
+
+} */
+/**************************************/
+@media only screen and (max-device-width: 218px) and (max-device-height: 281px) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 50px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 25px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1700px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/****************************************/
+@media only screen and (max-device-width: 281px) and (max-device-height: 218px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 50px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 25px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1500px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/******************************************************************************************************************/
+/* responsive for max width 320px <= device width */
+@media only screen and (max-device-width: 320px) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 50px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 25px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1700px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/*********************/
+@media only screen and (max-device-width: 320px) and (max-device-height: 320px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 50px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 25px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1500px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/***********************************************************************************************************************************************/
+/* responsive for min width 320px/max width 480px(Iphone 4 and 4S) pixel 2*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1870px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1870px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/**********************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1870px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/*************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1870px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/***************************************************************************************************************************************************************************************************/
+/* responsive for min width 320px/max width 568px  5C pixel 2*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1900px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 320px) and (max-device-height: 568px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1900px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1900px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (min-device-height: 320px) and (max-device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1900px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 60px;
+        row-gap: 60px;
+    }
+}
+/*************************************************************************************************************************************************************************/
+/* responsive for min width 375px/max width 667px 6S pixel 2 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 330px;
+        height: 180px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 330px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 330px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2130px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/*************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-height: 375px) and (max-device-height: 667px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 360px;
+        height: 170px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 360px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 360px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2100px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 330px;
+        height: 180px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 330px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 330px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2130px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/****************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-height: 375px) and (max-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 360px;
+        height: 170px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 360px;
+    }
+    #description, #title {
+        height: 35px;
+        width: 360px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2100px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/******************************************************************************************************************************************/
+/* responsive for min width 414px/max width 736px(Iphone 6+, 7+, 8+) pixel 3 */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 330px;
+        height: 165px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 330px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 330px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2200px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (min-device-height: 414px) and (max-device-height: 736px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 360px;
+        height: 170px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 360px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 360px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2200px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 330px;
+        height: 165px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 330px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 330px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2200px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (min-device-height: 414px) and (max-device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 360px;
+        height: 170px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 360px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 360px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2200px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+}
+/*********************************************************************************************************************************************/
+/* responsive for min width 375px/max width 812px(iphone X) pixel 3 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-device-height: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 390px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 390px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 390px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (min-device-height: 375px) and (max-device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-min-device-pixel-ratio: 3) and (-o-min-device-pixel-ratio: 3) and (min-device-pixel-ratio: 3) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 390px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 390px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 390px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/***************************************************************************************************************************/
+/*
+GALAXY PHONES  ||||||
+*/
+
+/* responsive for min width 360px/max width 640px(galaxy S3) pixel 2 */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 380px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 380px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 380px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 380px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 380px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 380px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/***********************************************************************************************************************************************/
+/* responsive for min width 360px/max width 640px(galaxy S4, S5, Note3)pixel: 3 =======  HTC PHONE = HTC One, Google pixel */
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+    .latestPic > .blockText {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 25px;
+        word-spacing: 3px;
+        padding: 0 20px;
+    }
+    .bigpad li {
+        padding: 7px;
+        font-size: 17px;
+    }
+    .latestPic > .horizontal {
+        width: 430px;
+        height: 270px;
+    }
+.latestGrid {
+    padding-bottom: 50px;
+}
+} */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (orientation: landscape) {
+    .latestPic > .blockText {
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+        line-height: 28px;
+        padding: 0 20px;
+        word-spacing: 3px;
+    }
+    .latestPic > .horizontal {
+        width: 460px;
+        height: 290px;
+    }
+    .bigpad li {
+        padding: 7px;
+        font-size: 17px;
+        text-align: center;
+    }
+.latestGrid {
+    padding-bottom: 50px;
+}
+} */
+/*******************************************/
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/******************************************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (min-device-height: 320px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 380px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 380px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 380px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 380px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 380px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 380px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*********************************************************************************************************************************************************************************************/
+/* responsive for min width 360px/max width 640px(galaxy S6) pixel 4 ======== GOOGLE PIXEL = Google Pixel XL */
+/* check the previous @media for the default min 360px/max 640px */
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/***************************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (min-device-height: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 380px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 380px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 380px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/************************************************************************************************************************************************************************/
+/*
+NEXUS PHONES  ||||||
+*/
+/* responsive for min width 384px/max width 640px(Nexus 4 [alt])  pixel 2*/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/***********************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/************************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) and (min-device-height: 384px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+}
+********************************************************this was commented: similar view port to galaxy S3******************************************************************************************************************* */
+/* responsive for min width 384px/max width 592px(Nexus 4) pixel 2 */
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 640px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/***********************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: portrait) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/************************************/
+/* @media only screen and (min-device-width: 384px) and (max-device-width: 592px) and (min-device-height: 384px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 2) and (-moz-device-pixel-ratio: 2) and (-o-device-pixel-ratio: 2) and (device-pixel-ratio: 2) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+}
+********************************************************this was commented: similar view port to galaxy S3******************************************************************************************************************* */
+/* responsive for min width 360px/max width 592px (Nexus 5) pixel 3*/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/************************************************/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: portrait) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* @media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (-o-device-pixel-ratio: 3) and (device-pixel-ratio: 3) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 390px;
+    }
+    #articleContainercontent {
+        grid-column: 1/8;
+    }
+} */
+/**************************************************this is commented: similar to galaxy S4*********************************************************************************************************************/
+/* responsive for min width 412px/ max width 732px(Nexus 6, 6P) pixel 4 */
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*************************************************/
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (min-device-height: 412px) and (max-device-height: 732px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 470px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 470px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 470px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2400px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*******************************************/
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/***************************************************/
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (min-device-height: 412px) and (max-device-height: 732px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 470px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 470px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 470px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2400px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*********************************************************************************************************************************************************/
+/* responsive for min width 360px/max width 592px (Nexus 6 and 6P [alt]) pixel 4*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/************************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2400px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*****************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 175px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*************************************************/
+@media only screen and (min-device-width: 360px) and (max-device-width: 592px) and (min-device-height: 360px) and (max-device-height: 592px) and (-webkit-device-pixel-ratio: 4) and (-moz-device-pixel-ratio: 4) and (-o-device-pixel-ratio: 4) and (device-pixel-ratio: 4) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2400px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/**********************************************************************************************************************************************************************************************************/
+/*
+WINDOWS PHONES  ||||||
+*/
+/* responsive for min width 480px/max width 800px(windows phone) */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (min-device-height: 480px) and (max-device-height: 800px) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 180px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2300px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/**********************************/
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (min-device-height: 480px) and (max-device-height: 800px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2400px;
+    }
+    .flexnotetab {
+        flex-direction: column;
+        column-gap: 90px;
+        row-gap: 90px;
+    }
+}
+/*********************************************************************************************************************************************************************/
+/*
+ipad tablet ||||||
+*/
+/* responsive for min width 768px/max width 1024px(ipad 1, 2, Mini) pixel 1 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 950px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1060px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 300px;
+        height: 150px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 300px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 300px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 950px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+    }
+/*************************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1060px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+}
+/***************************************************************************************************************************************************************************/
+/* responsive for min width 820px/max width 1180px(ipad air) pixel 1 */
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (min-device-height: 820px) and (max-device-height: 1180px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1260px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+}
+/******************************/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (min-device-height: 820px) and (max-device-height: 1180px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1260px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+}
+/***************************************************************************************************************************************************************/
+/* responsive for min width 768px/max width 1024px(ipad 3, 4, pro 9.7) pixel 2 */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1050px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+    /*********************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 470px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 470px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 470px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1200px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 350px;
+        height: 200px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 350px;
+    }
+    #description, #title {
+        height: 40px;
+        width: 350px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1050px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+    /*************************************/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (min-device-height: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 470px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 470px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 470px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1200px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+    /***************************************************************************************************************************************************************************/
+    /* responsive for min width 834px/max width 1112px(ipad pro 10.5) pixel 2  */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (min-device-height: 834px) and (max-device-height: 1112px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1260px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+}
+/********************************/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (min-device-height: 834px) and (max-device-height: 1112px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1260px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+}
+/***************************************************************************************************************************************************************/
+/* responsive for min width 1024px/max width 1366px(ipad pro 12.9) pixel 2 */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 280px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 60px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1390px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+    /*********************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 420px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 420px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 420px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 830px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+/******************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 450px;
+        height: 280px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 450px;
+    }
+    #description, #title {
+        height: 60px;
+        width: 450px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1390px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+    /*************************************/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (min-device-height: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 420px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 420px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 420px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 830px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+    /***************************************************************************************************************************************************************************/
+/*
+Galaxy tablet ||||||
+*/
+/* responsive for min width 800px/max width 1280px(galaxy tab 2) */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*******************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1260px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+}
+/* responsive for min width 800px/max width 1280px(galaxy tab S) pixel 2*/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1260px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+}
+/**********************************************************************************************************************************************************************************/
+/*
+Nexus tablet ||||||
+*/
+/* responsive for min width 600px/max width 960px(Nexus 7) pixel 1.331/1.332 */
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2100px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/***********************************************/
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2150px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2100px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*************************************************/
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (min-device-height: 600px) and (max-device-height: 960px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 500px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 500px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 500px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 2150px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 50px;
+        row-gap: 30px;
+    }
+}
+/******************************************************************************************************************************************************************************************************************************/
+
+/*
+Laptop ||||||
+*/
+/* responsive for min width 1200px/max width 1600px(non-retina) */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 820px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/***************************************/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) and (-moz-min-device-pixel-ratio: 1) and (-o-min-device-pixel-ratio: 1) and (min-device-pixel-ratio: 1) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 820px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+    /* retina */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 820px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/************************************************************************************************************************************************************************************************************************************************/
+/* responsive for min width 1536px/max width 2048px(Nexus 9) pixel 1.331/1.332 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 820px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/***************************************/
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-height: 1536px) and (max-device-height: 2048px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+   
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 510px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 70px;
+    }
+}
+/********************************/
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 820px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/****************************************/
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-height: 1536px) and (max-device-height: 2048px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (-moz-min-device-pixel-ratio: 1.331) and (-moz-max-device-pixel-ratio: 1.332) and (-o-min-device-pixel-ratio: 1.331) and (-o-max-device-pixel-ratio: 1.332) and (min-device-pixel-ratio: 1.331) and (max-device-pixel-ratio: 1.332) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+   
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 510px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 70px;
+    }
+}
+/***************************************************************************************************************************************************************************/
+/*
+Biggest screen  ||||||
+*/
+/* responsive for min width 2048px(biggest screen) */
+@media only screen and (min-device-width: 2048px) and (min-device-height: 2048px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+   
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 560px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 70px;
+    }
+}
+/******************************************************************************************************************************************************************************************/
+/*
+Kindle fire  ||||||
+*/
+/* responsive for min width 800px/max width 1280px(Kindle fire hd 7) 8.9 too pixel 1.5 */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*************************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 430px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 430px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 430px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1250px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*********************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/***********************************/
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (min-device-height: 800px) and (max-device-height: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 430px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 430px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 430px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1250px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/*********************************************************************************************************************************************/
+/* responsive for min width 1200px/max width 1600px (kindle fire hd 8.9)Pixel 1.5*/
+/* @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    #articleContainer {
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: 500px;
+    }
+    #articleContainercontent {
+        grid-column: 1/15;
+    }
+} */
+/************************************/
+/* @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px) and (orientation: landscape) {
+    #articleContainer {
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: 600px;
+    }
+    #articleContainercontent {
+        grid-column: 3/13;
+    }
+} */
+/**********************************/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: portrait) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 370px;
+        height: 220px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 370px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 370px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1180px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+/************************************/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-height: 1200px) and (max-device-height: 1600px)  and (-webkit-min-device-pixel-ratio: 1.5) and (-moz-min-device-pixel-ratio: 1.5) and (-o-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio: 1.5) and (orientation: landscape) {
+    #flexpictab {
+        flex-direction: column;
+    }
+    .picturepictab {
+        width: 430px;
+        height: 250px;
+    }
+    .subtitletab {
+        height: 70px;
+        width: 430px;
+    }
+    #description, #title {
+        height: 50px;
+        width: 430px;
+    }
+    .describesubtitletabFlex {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #gridnotetab {
+        grid-template-rows: 1250px;
+    }
+    .flexnotetab {
+        flex-direction: row;
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+}
+
+/****************************************************************/

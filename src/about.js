@@ -8,13 +8,10 @@ const About = () => {
     return(
         <>
         <Layout/>
-            <section id={myStyleAbout.aboutBac}>
-            {/**<!-- This usually defines section of codes of each of a content - for organizing and styling our document  --> */}
-                <main>
+                <main className={myStyleAbout.container}>
                 {/**<!-- This usually contains the main content of  document, it should not contain repeated info.--> */}
-                    <article>
+                    <article id={myStyleAbout.theArrange}>
                     {/**<!-- This usually contains much text area --> */}
-                        <div>
                             <h2>What we do</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio rem tenetur maxime vitae ullam 
@@ -33,10 +30,10 @@ const About = () => {
                                 ectetur adipisicing elit. Dignissimos praesentium, nam repellendus provident suscipit maxime voluptatem ipsam rem molestias modi
                                 , ducimus sapiente minima vel inventore aperiam. Provident aut voluptatem ducimus.
                             </p>
-                        </div>
+                    
                     </article>
                 </main>
-            </section>
+    
             <Footer/>
         </>
     )

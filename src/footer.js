@@ -1,34 +1,22 @@
 import React from "react";
-import myStyleFooter from "./webstylefooter.module.css";
+import footerstyle from "./footer.module.css";
+// import theLinkingStyle from "./thelinking.module.css";
+//************************************************* */
 
-
-const Footer = () => {
+//*************************************************************************************
+const TheSocial = (props) => {
     return (
-        <>
-            <footer className={myStyleFooter.foot}>
-            {/**<!-- This defines the footer for a document --> */}
-                <section>
-                {/**<!-- This usually defines section of codes of each of a content - for organizing and styling our document  --> */}
-                    <address className={myStyleFooter.contact}>
-                        <div>
-                            <img src="insta.png" alt="instagram" height="50px" width="50px"/>
-                        </div>
-                        <div>
-                            <img src="twi.png" alt="twitter" width="50px" height="50px"/>
-                        </div>
-                        <div>
-                            <img src="face.png" alt="Facebook" width="50px" height="50px"/>
-                        </div>
-                        <div>
-                            <details>
-                                <summary>About</summary>
-                                <h4>CO-hepa &copy;2020</h4>
-                            </details>
-                        </div>
-                    </address>
-                </section>
-            </footer>
-        </>
+        <div style={{display: props.socialOnOff}}>
+            <div style= {props.myTwoStyle} className={footerstyle.footersocial}>
+            <address id= {footerstyle.socialflex}>
+                
+                <div><span  id= {footerstyle.tempo1} className= {footerstyle.tempo}><img alt= 'face' src= {props.mySocial[0]}> </img></span></div>
+                <div><span id= {footerstyle.tempo2} className= {footerstyle.tempo}><img alt= 'face' src= {props.mySocial[1]}> </img></span></div>
+                <div><span id= {footerstyle.tempo3} className= {footerstyle.tempo}><img alt= 'face' src= {props.mySocial[2]}> </img></span></div>
+            </address>
+            </div>
+        </div>
     )
 }
-export default Footer;
+
+export default TheSocial;

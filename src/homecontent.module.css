@@ -1,67 +1,60 @@
-section#aboutBac {
-    background-image: url("circle.png"), url("toplef.png");
+/* @media (max-width: 600px) {
+    section#firstSec {
+        background-image: url("botomrigh.png"), url("toplef.png"), 
+        url("circle.png"), url("circle.png"), url("circle.png");
+        background-repeat: no-repeat;
+        background-position: bottom right, top left, center, 900px 400px, 55px 1200px;
+    }
+} */
+
+/* this are backgroung  created graphic images*/
+/* section#firstSec {
+    background-image: url("botomrigh.png"), url("toplef.png"), 
+    url("circle.png"), url("circle.png"), url("circle.png");
     background-repeat: no-repeat;
-    background-position: center, 0 0;
-}
-/* this effect the paragraph text on about page*/
-/* section#aboutBac div {
-    flex: 0 1 auto;
-    padding: 50px;
-    border-radius: 3px;
-    margin: 200px;
-    margin-bottom: 300px;
-    margin-top: 100px;
-    background-color: rgba(80, 80, 80, 0.9);
-    flex: 1 1 80px;
-    text-align: center;
-    margin: 100px;
-    padding: 50px;
-    font-size: 22px;
-    border-radius: 70px;
-    background-color: rgba(80, 80, 80, 0.7);
+    background-position: bottom right, top left, center, 900px 200px, 55px 1700px;
 } */
-/* about page flex box container*/ 
-/* section#aboutBac article {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: center;
+
+
+/* div h3 {
+    text-align: center;
 } */
-h2 {
-    font-family: monospace;
-    color: white;
-    text-align: center;
-}
-article p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-    text-align: center;
-    color: whitesmoke;
-}
-
-
-
-
 
 
 
 /*********************************************Modification done below during the christmas holiday**Holiday challenge***********************************************************************************/
 
 
-
-
-
 .container {
     display: grid;
+    background-color: black;
     gap: 30px 30px;
     justify-content: center;
-    background-color: rgba(80, 80, 80, 0.7);
-    border-radius: 20px;
     /* grid-auto-flow: column; */
 }
-#arrange {
+.first {
+    background-color: aqua;
+    padding: 50px;
     text-align: center;
 }
-
+.otherA  {
+    background-color: red;
+    padding: 50px;
+    text-align: center;
+}
+.otherB {
+    background-color: blue;
+    padding: 50px;
+    text-align: center;
+}
+.otherC {
+    background-color: hotpink;
+    padding: 50px;
+    text-align: center;
+}
+.sameborder {
+    border-radius: 20px;
+}
 
 /* responsive for max width 218px (wearables) */
 @media only screen and (max-device-width: 218px) and (max-device-height: 281px) {
@@ -69,16 +62,27 @@ article p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-rows: auto;
+        grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    h2 {
-        font-size: 8px;
+    #nowWorking {
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
-    article p {
-        font-size: 7px;
+    .otherA {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .otherB {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .otherC {
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 }
 /****************************************/
@@ -87,16 +91,27 @@ article p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-rows: auto;
+        grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    h2 {
-        font-size: 8px;
+    #nowWorking {
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
-    article p {
-        font-size: 7px;
+    .otherA {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .otherB {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .otherC {
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 }
 /**************************************/
@@ -105,17 +120,28 @@ article p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-rows: auto;
+        grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    h2 {
-        font-size: 8px;
+    #nowWorking {
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
-    article p {
-        font-size: 7px;
-    }    
+    .otherA {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .otherB {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .otherC {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
 }
 /*******************************************************************************************************************************/
 /* responsive for max width 320px <= device width */
@@ -124,16 +150,27 @@ article p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-rows: auto;
+        grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    h2 {
-        font-size: 8px;
+    #nowWorking {
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
-    article p {
-        font-size: 7px;
+    .otherA {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .otherB {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .otherC {
+        grid-column: 1/2;
+        grid-row: 5/6;
     }
 }
 /************************/
@@ -142,28 +179,9 @@ article p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-rows: auto;
-    }
-    #theArrange {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    h2 {
-        font-size: 8px;
-    }
-    article p {
-        font-size: 7px;
-    }
-}
-/***************************************************************************************************************************/
-/* responsive for min width 320px/max width 480px (iphone 4 and 4S) pixel 2*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 240px;
-        grid-auto-rows: 240px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -171,15 +189,45 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+}
+/***************************************************************************************************************************/
+/* responsive for min width 320px/max width 480px (iphone 4 and 4S) pixel 2*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
+        grid-auto-columns: 1fr;
+    }
+    #arrange {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #nowWorking {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .otherA {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .otherB {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -188,11 +236,11 @@ article p {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (orientation: landscape) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 250px;
-        grid-auto-rows: 250px;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -200,15 +248,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -217,11 +265,11 @@ article p {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: portrait) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 240px;
-        grid-auto-rows: 240px;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -229,15 +277,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -246,11 +294,11 @@ article p {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-height: 320px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (-moz-min-device-pixel-ratio: 2) and (-o-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 2) and (orientation: landscape) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 250px;
-        grid-auto-rows: 250px;
+        grid-template-rows: auto;
+        grid-auto-rows: auto;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -258,15 +306,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -280,7 +328,7 @@ article p {
         grid-auto-rows: 240px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -288,15 +336,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -309,7 +357,7 @@ article p {
         grid-auto-rows: 250px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -317,15 +365,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -338,7 +386,7 @@ article p {
         grid-auto-rows: 240px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -346,15 +394,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -367,7 +415,7 @@ article p {
         grid-auto-rows: 250px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -375,15 +423,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -397,7 +445,7 @@ article p {
         grid-auto-rows: 245px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -405,15 +453,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -426,7 +474,7 @@ article p {
         grid-auto-rows: 275px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -434,15 +482,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -455,7 +503,7 @@ article p {
         grid-auto-rows: 245px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -463,15 +511,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -484,7 +532,7 @@ article p {
         grid-auto-rows: 275px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -492,15 +540,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -514,7 +562,7 @@ article p {
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -522,15 +570,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -543,7 +591,7 @@ article p {
         grid-auto-rows: 375px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -551,15 +599,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -572,7 +620,7 @@ article p {
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -580,15 +628,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -601,7 +649,7 @@ article p {
         grid-auto-rows: 375px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -609,15 +657,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -631,7 +679,7 @@ article p {
         grid-auto-rows: 400px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -639,15 +687,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -660,7 +708,7 @@ article p {
         grid-auto-rows: 375px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -668,15 +716,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -689,7 +737,7 @@ article p {
         grid-auto-rows: 400px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -697,15 +745,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -718,7 +766,7 @@ article p {
         grid-auto-rows: 375px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -726,15 +774,15 @@ article p {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -752,7 +800,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -760,15 +808,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -781,7 +829,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -789,15 +837,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -810,7 +858,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -818,15 +866,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -839,7 +887,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -847,15 +895,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -869,7 +917,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -877,15 +925,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -898,7 +946,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -906,15 +954,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -927,7 +975,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -935,15 +983,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -956,7 +1004,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -964,15 +1012,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -985,7 +1033,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -993,15 +1041,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1014,7 +1062,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1022,15 +1070,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1043,7 +1091,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1051,15 +1099,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1072,7 +1120,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1080,15 +1128,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1103,7 +1151,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1111,15 +1159,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1132,7 +1180,7 @@ GALAXY PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1140,15 +1188,15 @@ GALAXY PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1165,7 +1213,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1173,15 +1221,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1194,7 +1242,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1202,15 +1250,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1223,7 +1271,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1231,15 +1279,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1253,7 +1301,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1261,15 +1309,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1282,7 +1330,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1290,15 +1338,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1311,7 +1359,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1319,15 +1367,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1341,7 +1389,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1349,15 +1397,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1370,7 +1418,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1378,15 +1426,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1399,7 +1447,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1407,15 +1455,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1429,7 +1477,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1437,15 +1485,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1458,7 +1506,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1466,15 +1514,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1487,7 +1535,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1495,15 +1543,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1516,7 +1564,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1524,15 +1572,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1546,7 +1594,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1554,15 +1602,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1575,7 +1623,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1583,15 +1631,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1604,7 +1652,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 350px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1612,15 +1660,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1633,7 +1681,7 @@ NEXUS PHONES  ||||||
         grid-auto-rows: 300px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1641,15 +1689,15 @@ NEXUS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1666,7 +1714,7 @@ WINDOWS PHONES  ||||||
         grid-auto-rows: 400px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1674,15 +1722,15 @@ WINDOWS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1696,7 +1744,7 @@ WINDOWS PHONES  ||||||
         grid-auto-rows: 400px;
         grid-auto-columns: 1fr;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1704,15 +1752,15 @@ WINDOWS PHONES  ||||||
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 1/2;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 5/6;
     }
@@ -1729,7 +1777,7 @@ ipad tablet ||||||
         grid-auto-rows: 350px;
         /* grid-auto-columns: 500px; */
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -1737,15 +1785,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -1760,7 +1808,7 @@ ipad tablet ||||||
         gap: 30px 30px;
         padding: 10px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1768,15 +1816,15 @@ ipad tablet ||||||
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -1789,7 +1837,7 @@ ipad tablet ||||||
         grid-auto-rows: 350px;
         /* grid-auto-columns: 500px; */
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -1797,15 +1845,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -1820,7 +1868,7 @@ ipad tablet ||||||
         gap: 30px 30px;
         padding: 10px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1828,15 +1876,15 @@ ipad tablet ||||||
         grid-column: 1/2;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -1850,7 +1898,7 @@ ipad tablet ||||||
         grid-auto-rows: 500px;
         /* grid-auto-columns: 1fr; */
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -1858,15 +1906,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -1881,7 +1929,7 @@ ipad tablet ||||||
         gap: 40px 40px;
         padding: 20px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1889,16 +1937,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }   
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -1911,7 +1959,7 @@ ipad tablet ||||||
         grid-auto-rows: 500px;
         /* grid-auto-columns: 1fr; */
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -1919,15 +1967,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -1942,7 +1990,7 @@ ipad tablet ||||||
         gap: 40px 40px;
         padding: 20px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -1950,16 +1998,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }   
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -1973,7 +2021,7 @@ ipad tablet ||||||
         grid-auto-rows: 500px;
         /* grid-auto-columns: 1fr; */
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -1981,15 +2029,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2004,7 +2052,7 @@ ipad tablet ||||||
         gap: 30px 30px;
         padding: 10px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -2012,16 +2060,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2033,7 +2081,7 @@ ipad tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2041,15 +2089,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2064,7 +2112,7 @@ ipad tablet ||||||
         gap: 30px 30px;
         padding: 10px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -2072,16 +2120,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2094,7 +2142,7 @@ ipad tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2102,15 +2150,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2124,7 +2172,7 @@ ipad tablet ||||||
         padding: 10px;
         gap: 30px 30px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2
     }
@@ -2132,16 +2180,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2153,7 +2201,7 @@ ipad tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2161,15 +2209,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2183,7 +2231,7 @@ ipad tablet ||||||
         padding: 10px;
         gap: 30px 30px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2
     }
@@ -2191,16 +2239,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2213,7 +2261,7 @@ ipad tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2221,15 +2269,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2243,7 +2291,7 @@ ipad tablet ||||||
         padding: 20px;
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -2251,16 +2299,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -2272,7 +2320,7 @@ ipad tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2280,15 +2328,15 @@ ipad tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2302,7 +2350,7 @@ ipad tablet ||||||
         padding: 20px;
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -2310,16 +2358,16 @@ ipad tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 1/2;
         grid-row: 3/4;
     }
@@ -2335,7 +2383,7 @@ Galaxy tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2343,15 +2391,15 @@ Galaxy tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2365,7 +2413,7 @@ Galaxy tablet ||||||
         padding: 10px;
         gap: 30px 30px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2
     }
@@ -2373,16 +2421,16 @@ Galaxy tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2394,7 +2442,7 @@ Galaxy tablet ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2402,15 +2450,15 @@ Galaxy tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2424,7 +2472,7 @@ Galaxy tablet ||||||
         padding: 10px;
         gap: 30px 30px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2
     }
@@ -2432,16 +2480,16 @@ Galaxy tablet ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2457,7 +2505,7 @@ Nexus tablet ||||||
         grid-template-rows: 350px;
         grid-auto-rows: 350px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2465,15 +2513,15 @@ Nexus tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2485,7 +2533,7 @@ Nexus tablet ||||||
         grid-template-rows: 350px;
         grid-auto-rows: 350px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 3/8;
         grid-row: 1/2;
     }
@@ -2493,15 +2541,15 @@ Nexus tablet ||||||
         grid-column: 3/8;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 3/8;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 3/8;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 3/8;
         grid-row: 5/6;
     }
@@ -2513,7 +2561,7 @@ Nexus tablet ||||||
         grid-template-rows: 350px;
         grid-auto-rows: 350px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2521,15 +2569,15 @@ Nexus tablet ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2541,7 +2589,7 @@ Nexus tablet ||||||
         grid-template-rows: 350px;
         grid-auto-rows: 350px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 3/8;
         grid-row: 1/2;
     }
@@ -2549,15 +2597,15 @@ Nexus tablet ||||||
         grid-column: 3/8;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 3/8;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 3/8;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 3/8;
         grid-row: 5/6;
     }
@@ -2575,7 +2623,7 @@ Laptops  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2583,16 +2631,16 @@ Laptops  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }
@@ -2606,7 +2654,7 @@ Laptops  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2614,16 +2662,16 @@ Laptops  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }
@@ -2637,7 +2685,7 @@ Laptops  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2645,16 +2693,16 @@ Laptops  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }
@@ -2702,7 +2750,7 @@ Kindle fire  ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2710,15 +2758,15 @@ Kindle fire  ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2732,7 +2780,7 @@ Kindle fire  ||||||
         padding: 10px;
         gap: 30px 30px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2
     }
@@ -2740,16 +2788,16 @@ Kindle fire  ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2761,7 +2809,7 @@ Kindle fire  ||||||
         grid-template-rows: 500px;
         grid-auto-rows: 500px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 2/9;
         grid-row: 1/2;
     }
@@ -2769,15 +2817,15 @@ Kindle fire  ||||||
         grid-column: 2/9;
         grid-row: 2/3;
     }
-    .implicitproductsA {
+    .otherA {
         grid-column: 2/9;
         grid-row: 3/4;
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/9;
         grid-row: 4/5;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/9;
         grid-row: 5/6;
     }
@@ -2791,7 +2839,7 @@ Kindle fire  ||||||
         padding: 10px;
         gap: 30px 30px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 1/2;
         grid-row: 1/2
     }
@@ -2799,16 +2847,16 @@ Kindle fire  ||||||
         grid-column: 2/3;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 1/2;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -2823,7 +2871,7 @@ Kindle fire  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2831,16 +2879,16 @@ Kindle fire  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }
@@ -2854,7 +2902,7 @@ Kindle fire  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2862,16 +2910,16 @@ Kindle fire  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }
@@ -2885,7 +2933,7 @@ Kindle fire  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2893,16 +2941,16 @@ Kindle fire  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }
@@ -2916,7 +2964,7 @@ Kindle fire  ||||||
         
         gap: 40px 40px;
     }
-    #theArrange {
+    #arrange {
         grid-column: 4/10;
         grid-row: 1/2;
     }
@@ -2924,16 +2972,16 @@ Kindle fire  ||||||
         grid-column: 11/17;
         grid-row: 1/2;
     }
-    .implicitproductsA  {
+    .otherA  {
         grid-column: 4/10;
         grid-row: 2/3;
        
     }
-    .implicitproductsB {
+    .otherB {
         grid-column: 11/17;
         grid-row: 2/3;
     }
-    .implicitproductsC {
+    .otherC {
         grid-column: 11/17;
         grid-row: 3/4;
     }

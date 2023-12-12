@@ -4,7 +4,6 @@ import Footer from "./footer";
 import Subscribe from "./subscribe";
 import Layout from "./layout";
 
-
 const Service = () => {
     return(
         <>
