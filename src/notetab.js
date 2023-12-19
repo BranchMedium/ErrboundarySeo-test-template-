@@ -1,12 +1,12 @@
 import React from "react";
 // import myStyleHome from "./webstylehome.module.css";
-import TheSocial from "./footer";
+// import TheSocial from "./footer";
 import Layout from "./layout";
 import Notetab from "./notetab.module.css";
 
-import face from "./face.png";
-import insta from "./insta.png";
-import twi from "./twi.png";
+// import face from "./face.png";
+// import insta from "./insta.png";
+// import twi from "./twi.png";
 
 
 const Subtitle = () => {
@@ -62,9 +62,9 @@ const PicTab = (props) => {
 //************************************************************************************************************************************************************* */
 
 
-let FooterStyle = {
-    backgroundColor: 'aqua'
-}
+// let FooterStyle = {
+//     backgroundColor: 'aqua'
+// }
 const NoteTabcontent = () => {
     return (
         <div id= {Notetab.gridnotetab}>

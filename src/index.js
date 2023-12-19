@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Layout from "./layout";
-import About from "./about";
-import Service from "./service";
+// import Layout from "./layout";
+// import About from "./about";
+// import Service from "./service";
 import Pads from "./pads";
 import ErTestTemplate from './Errboundarytemplate';
 import {HighTab} from "./hightab";

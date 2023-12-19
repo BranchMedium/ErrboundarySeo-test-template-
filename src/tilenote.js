@@ -1,18 +1,18 @@
 import React from "react";
 // import myStyleHome from "./webstylehome.module.css";
-import TheSocial from "./footer";
+// import TheSocial from "./footer";
 import Layout from "./layout";
 import tileNote from "./tilenote.module.css";
 
-import face from "./face.png";
-import insta from "./insta.png";
-import twi from "./twi.png";
+// import face from "./face.png";
+// import insta from "./insta.png";
+// import twi from "./twi.png";
 
 
 
-let FooterStyle = {
-    backgroundColor: 'aqua'
-}
+// let FooterStyle = {
+//     backgroundColor: 'aqua'
+// }
 const TileNotecontent = () => {
     return (
         <div id= {tileNote.gridtilenote}>

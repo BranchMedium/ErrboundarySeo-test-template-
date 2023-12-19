@@ -1,6 +1,6 @@
 import React from "react";
 import DownHeader from "./Thedownheader";
-import {Outlet} from "react-router-dom";
+// import {Outlet} from "react-router-dom";
 // import myStyleLayout from "./webstylelayout.module.css";
 // import TheNav from "./navcomponent";
 

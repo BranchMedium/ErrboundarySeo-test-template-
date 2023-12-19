@@ -7,15 +7,7 @@ import {HighTabcontent} from "./hightab";
 import {NoteTabcontent} from "./notetab";
 import {MinitabNotecontent} from "./minitabnote";
 import {TileNotecontent} from "./tilenote";
-import face from "./face.png";
-import insta from "./insta.png";
-import twi from "./twi.png";
 
-
-
-let FooterStyle = {
-    backgroundColor: 'aqua'
-}
 const Padding = () => {
     return (
         <div id= {myStyleHome.paddingBottom}></div>
@@ -36,7 +28,7 @@ const Pads = () => {
             <Padding/>
             <PadsContent/>
             <Padding/>
-                {/* <TheSocial socialOnOff= 'block' mySocial= {[face, insta, twi]} myTwoStyle= {FooterStyle}/> */}
+            {/* <TheSocial/> */}
         </>
     )
 }
